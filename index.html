@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Move API - Movie Reviews</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script async src="https://kit.fontawesome.com/4bf0a75058.js" crossorigin="anonymous"></script>
+    <!-- Need to load GreenSock with defer, so it loads first, then our own JS file -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+    <!-- our Ajax js file -->
+    <script defer src="js/fetch.js"></script>
+    <!-- our main js file -->
+    <script defer src="js/main.js"></script>
+    <!-- our scrolltrigger js file -->
+    <script defer src="js/SplitText.js"></script>
+    <script defer src="js/gsapText.js"></script>
+
+
+    
+  </head>
+  <body>
+    <h1 class="hidden">Welcome to Star Wars</h1>
+    <header id="main-header" class="grid-con">
+      <h2 class="hidden">main nav</h2>
+      <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11">
+          <div id="burger_button">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+          </div>
+          <div id="burger-con">
+              <ul>
+                  <li>
+                      <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                      <a href="#">Films</a>
+                  </li>
+                  <li>
+                      <a href="#">Series</a>
+                  </li>
+          
+                  <li>
+                      <a href="#">Disney+</a>
+                  </li>
+              </ul>
+              
+          </div>
+          
+      </nav>
+
+      <div class="logo col-start-2 col-end-4 m-col-start-6 m-col-end-8">
+          <a href=""><img src="images/starwars_logo.png" alt="header-logo"></a>
+      </div>
+
+        <div id="header-box1-media" class="col-start-4 col-end-5 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#"><i class="fa-brands fa-galactic-senate"></i></a>
+
+        </div>
+    </header>
+
+  <main>
+    <div class="grid-con">
+      <section class="col-span-full col-start-6 col-end-8" id="spinner-con">
+        <h2 class="hidden">loading</h2>
+      </section>
+      <section class="col-span-full m-col-span-6" id="movie-box">
+        <h2>Characters</h2>
+      </section>
+      <section class="col-span-full m-col-span-6" id="review-box">
+        <h2 class="movies">Films</h2>
+        <div id="review-con">
+          <!-- template will be inserted here -->
+        </div>
+        <template id="review-template">
+          <section>
+            <h3 class="review-heading">
+              <!-- <p class="review-author"></p> -->
+            </h3>
+            <p class="review-description"></p>
+          </section>
+        </template>
+      </section>
+      
+    </div>  
+  </main>
+
+  <footer class="sticky_footer">
+    <h3>All images &copy; Star Wars</h3>
+  </footer>
+
+
+  </body>
+</html>
