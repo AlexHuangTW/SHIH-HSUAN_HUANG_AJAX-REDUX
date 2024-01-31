@@ -1,0 +1,45 @@
+a {
+    cursor: pointer;
+}
+
+li {
+    color: #ffffff;
+    list-style-type: none;
+    padding: 20px;
+
+}
+
+li a:hover {
+    background-color: rgba(0, 251, 255, 0.5);
+    padding: 15px 15px;
+}
+
+h2 {
+    color: #fffb00;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.review-heading, .review-description {
+    color: #ffffff;
+}
+
+.review-template {
+    background-color: rgba(0, 251, 255, 0.5);
+}
+
+.filmsImg {
+    max-width: 350px;
+
+}
+
+#review-con {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+#spinner-con {
+    max-width: 100px;
+}
