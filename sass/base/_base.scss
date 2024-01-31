@@ -1,0 +1,17 @@
+// colors
+$backgroubd-color: #000000;
+$color-white: #fff;
+
+body {
+    // background-color: $backgroubd-color;
+    background: url(../images/star-wars-backgrounds.jpg);
+}
+
+.material-heading, .material-description {
+    color: $color-white;
+}
+
+#material-title {
+    color: $color-white;
+    font-size: 2.5rem;
+}
